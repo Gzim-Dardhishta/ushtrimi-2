@@ -7,9 +7,11 @@
     <title>Document</title>
 </head>
 <body style="background-color: aqua;">
-    <header>
-        <img src="https://pbs.twimg.com/profile_images/485045592800772098/Ecv0A9gR.png" width="100px" height="100px" alt="logo UBT">
-        <nav>
+    <header id="header">
+        <div class="logo">
+            <img src="https://pbs.twimg.com/profile_images/485045592800772098/Ecv0A9gR.png" width="100px" height="100px" alt="logo UBT">
+        </div>
+        <nav id="nav-links">
             <ul>
                 <li>Home</li>
                 <li>About Us</li>
@@ -17,7 +19,7 @@
             </ul>
         </nav>
 
-        <ol>
+        <ol class="media">
             <li>Lajme</li>
             <li>Teknologji</li>
             <li>Sport</li>
@@ -27,37 +29,39 @@
         </ol>
     </header>
 
-    <main>
-        <h3>Regjistrohu ne faqen tone</h3>
+    <main id="main">
+        <h3 class="regjistrim">Regjistrohu ne faqen tone</h3>
 
-        <fieldset>
-            <legend>Regjistrimi</legend>
+        <fieldset id="regjistrimi">
+            <legend class="regjitrim-title">Regjistrimi</legend>
 
-            <form action="">
+            <form id="form" action="">
                 <label for="emri">Emri: </label><input id="emri" type="text"> <br>
                 <label for="mbiemri">Mbiemri: </label> <input id="mbiemri" type="text"> <br>
                 <label for="email">E-Mail: </label> <input type="email" name="" id="email"> <br>
                 <label for="mosha">Mosha: </label> <input type="numer" min="18" id="mosha"> <br>
                 <label for="date">DiteLindja: </label> <input type="date" id="date"> <br>
 
-                <select name="qytet" id="">
+                <select class="qytet" name="qytet" id="">
                     <option value="ferizaj">Ferizaj</option>
                     <option value="prishtine">Prishtine</option>
                     <option value="peje">Peje</option>
                 </select>
                 
-                <input type="radio">M 
-                <input type="radio">F
+                <div class="gender">
+                    <input type="radio">M 
+                    <input type="radio">F
+                </div>
 
                 <br>
-                <input type="submit" required name="" id="">
+                <input class="submit" type="submit" required name="" id="">
             </form>
         </fieldset>
 
-        <fieldset>
-            <legend>Orari</legend>
+        <fieldset id="orari">
+            <legend class="orari-title">Orari</legend>
 
-            <table border="1px">
+            <table class="tabel-orari" border="1px">
                 <tr>
                     <th>9 - 10.30</th>
                     <th>10.40 - 12.10</th>
@@ -92,10 +96,10 @@
                 
             </table>
 
-            <fieldset>
-                <legend>Lendet</legend>
+            <fieldset id="lendet">
+                <legend class="lendet-title">Lendet</legend>
 
-                <ul>
+                <ul class="lendet-web">
                     <li>Inxhinjeri e Webit</li>
                     <ul>
                         <li>HTML</li>
@@ -118,7 +122,7 @@
         </fieldset>
     </main>
 
-    <footer style="text-align: center;">
+    <footer id="footer" style="text-align: center;">
         <h3>2021 SHKI- <a href="#">Referenca</a></h3>
     </footer>
 </body>
